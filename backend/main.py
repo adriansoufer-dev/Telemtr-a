@@ -5,7 +5,11 @@ import logging
 import os
 import sys
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Any
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from fastapi import FastAPI
 
@@ -169,3 +173,14 @@ app = FastAPI(
 )
 app.include_router(rest_router)
 app.include_router(websocket_router)
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(
+        app,
+        host=os.getenv("HOST", "0.0.0.0"),
+        port=int(os.getenv("PORT", "8000")),
+        log_level=os.getenv("LOG_LEVEL", "info").lower(),
+    )

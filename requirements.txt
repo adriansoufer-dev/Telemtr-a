@@ -1,0 +1,7 @@
+fastapi>=0.111,<1
+uvicorn[standard]>=0.30,<1
+pyserial>=3.5,<4
+cryptography>=42,<47
+websockets>=12,<16
+numpy>=1.26,<3
+pydantic>=2.7,<3

@@ -1,0 +1,761 @@
+2026-06-16 21:28:57,045 WARNING __main__: Using default development AES key. Set TELEMETRY_AES_KEY_HEX in production.
+2026-06-16 21:28:57,051 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:28:58,154 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:29:00,172 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:29:04,186 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:29:12,193 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:29:22,213 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:29:32,222 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:29:42,244 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:29:52,247 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:30:02,261 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:30:12,276 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:30:22,296 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:30:32,329 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:30:42,353 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:30:52,374 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:31:02,398 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:31:12,418 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:31:22,407 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:31:32,415 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:31:42,430 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:31:52,440 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:32:02,451 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:32:12,484 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:32:22,505 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:32:32,526 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:32:42,530 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:32:52,558 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:33:02,576 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:33:12,610 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:33:22,634 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:33:32,646 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:33:42,673 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:33:52,691 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:34:02,696 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:34:12,701 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:34:22,695 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:34:32,704 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:34:42,733 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:34:52,738 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
+2026-06-16 21:35:02,764 ERROR backend.comms.uart: UART read loop error
+Traceback (most recent call last):
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 51, in run
+    await self._ensure_open()
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 74, in _ensure_open
+    self._serial = await asyncio.to_thread(self._open_sync)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\adria\Documents\TELEMETRIA\backend\comms\uart.py", line 79, in _open_sync
+    return serial.Serial(
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 33, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialutil.py", line 244, in __init__
+    self.open()
+  File "C:\Users\adria\AppData\Local\Programs\Python\Python310\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2)
